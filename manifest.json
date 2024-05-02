@@ -3,21 +3,24 @@
   "name": "Tempo Key",
   "version": "1.0",
   "description": "Analyze BPM and key of songs played in your browser.",
-  "permissions": ["activeTab"],
+  "permissions": [
+    "activeTab",
+    "tabCapture"
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "images/icon16.png",
-      "48": "images/icon48.png",
-      "128": "images/icon128.png"
+      "16": "images/tempo-key-icon-32bits-16.png",
+      "48": "images/tempo-key-icon-32bits-48.png",
+      "128": "images/tempo-key-icon-32bits-128.png"
     }
   },
   "background": {
-    "service_worker": "background.js"
+  "service_worker": "dist/background.bundle.js"
   },
   "icons": {
-    "16": "images/icon16.png",
-    "48": "images/icon48.png",
-    "128": "images/icon128.png"
+    "16": "images/tempo-key-icon-32bits-16.png",
+    "48": "images/tempo-key-icon-32bits-48.png",
+    "128": "images/tempo-key-icon-32bits-128.png"
   }
 }
